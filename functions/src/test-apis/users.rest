@@ -1,0 +1,17 @@
+post http://localhost:5000/mora-backend/us-central1/api/login
+Content-Type: application/json
+
+{
+    "email":"test-2@test.com",
+    "password":"test@123"
+}
+
+###
+
+post http://localhost:5000/mora-backend/us-central1/api/register
+Content-Type: application/json
+
+{
+    "email":"test-2@test.com",
+    "password":"test@123"
+}

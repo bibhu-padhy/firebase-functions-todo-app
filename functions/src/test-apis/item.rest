@@ -1,0 +1,24 @@
+POST http://localhost:5000/mora-backend/us-central1/api/createTodoItems/rqARyJlyhWaQdoKJQyep
+Content-Type: application/json
+
+{
+    "item":"test"
+}
+
+###
+
+GET http://localhost:5000/mora-backend/us-central1/api/getTodoItems/rqARyJlyhWaQdoKJQyep
+
+###
+
+PUT http://localhost:5000/mora-backend/us-central1/api/subject/qXzbOA3umBtgJczNOq0B/editItem/Cu9C7Z6HiXKr9FnIOnn3
+Content-Type: application/json
+
+{
+    "item":"edited test-2"
+}
+
+###
+
+DELETE http://localhost:5000/mora-backend/us-central1/api/subject/rqARyJlyhWaQdoKJQyep/deleteItem/Cu9C7Z6HiXKr9FnIOnn3
+

@@ -1,0 +1,22 @@
+GET http://localhost:5000/mora-backend/us-central1/api/getTodoSubjectList
+
+###
+
+POST http://localhost:5000/mora-backend/us-central1/api/createTodoSubject
+Content-Type: application/json
+
+{
+    "subjectTitle":"test-2"
+}
+
+###
+
+PUT  http://localhost:5000/mora-backend/us-central1/api/editTodoSubjectTitle/IFg8jf5k4iqaSWngOq4L
+Content-Type: application/json
+
+{
+    "subjectTitle":"edited"
+}
+
+### 
+DELETE  http://localhost:5000/mora-backend/us-central1/api/deleteTodoSubject/UV9Meox7pDfC21XuvOL2
