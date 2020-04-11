@@ -2,14 +2,16 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const express = require("express");
 const users_controller_1 = require("../controllers/users.controller");
+// import { AuthorizationMiddleware } from '../middlewares/authorization.middleware';
 class UsersRoute {
     constructor() {
-        this.todoRoutes = new users_controller_1.Users();
+        // private authMiddleware: AuthorizationMiddleware = new AuthorizationMiddleware()
+        this.users = new users_controller_1.Users();
         this.router = express.Router();
     }
     routes(api) {
-        this.router.post('/register', this.todoRoutes.register);
-        this.router.post('/login', this.todoRoutes.login);
+        this.router.post('/register', this.users.register);
+        this.router.post('/login', this.users.login);
         api.use('', this.router);
     }
 }
